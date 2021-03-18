@@ -6,7 +6,7 @@ const Pothos = () => {
   const another = () => {
     fetch("http://localhost:8080/cider")
       .then(res => res.json())
-      .then(i => setCider(i.drink))
+      .then(i => setCider(i.isWet))
   }
 
   useEffect(another, [])
