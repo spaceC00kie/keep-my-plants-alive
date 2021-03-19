@@ -14,6 +14,6 @@ app.listen(PORT, () => console.log("Boozy testing"))
 
 app.get("/sensor", (req, res) => {
   res.status(200).send({
-    isWet: sensor.readSync(),
+    isWet: !sensor.readSync(),
   })
 })
