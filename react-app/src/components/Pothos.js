@@ -6,7 +6,7 @@ const Pothos = () => {
   const another = () => {
     fetch("http://10.0.0.6:8080/sensor")
       .then(res => res.json())
-      .then(i => setCider(i.isWet))
+      .then(i => setCider(i.isWet ? "wet" : "dry"))
   }
 
   useEffect(another, [])
@@ -14,7 +14,7 @@ const Pothos = () => {
   return (
     <div>
       {cider} <br />
-      <button onClick={() => another()}>See more</button>
+      <button onClick={() => another()}>Update</button>
     </div>
   )
 }
