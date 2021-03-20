@@ -4,7 +4,7 @@ const Pothos = () => {
   const [cider, setCider] = useState("")
 
   const another = () => {
-    fetch("http://localhost:8080/sensor")
+    fetch("http://10.0.0.6:8080/sensor")
       .then(res => res.json())
       .then(i => setCider(i.isWet))
   }
