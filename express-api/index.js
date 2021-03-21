@@ -3,7 +3,8 @@ const express = require("express")
 const app = express()
 var cors = require("cors")
 
-const sensor = new Gpio(2, "in")
+const sensor1 = new Gpio(2, "in")
+const sensor2 = new Gpio(24, "in")
 
 const PORT = 8080
 
@@ -14,6 +15,7 @@ app.listen(PORT, () => console.log("Boozy testing"))
 
 app.get("/sensor", (req, res) => {
   res.status(200).send({
-    isWet: !sensor.readSync(),
+    is1Wet: !sensor1.readSync(),
+    is2Wet: !sensor2.readSync(),
   })
 })

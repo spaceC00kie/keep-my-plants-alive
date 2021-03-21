@@ -6,7 +6,7 @@ const Pothos = () => {
   const another = () => {
     fetch("http://10.0.0.6:8080/sensor")
       .then(res => res.json())
-      .then(i => setCider(i.isWet ? "wet" : "dry"))
+      .then(i => setCider(i.is1Wet ? "wet" : "dry"))
   }
 
   useEffect(another, [])
