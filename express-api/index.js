@@ -4,7 +4,7 @@ const app = express()
 var cors = require("cors")
 
 const sensor1 = new Gpio(2, "in")
-const sensor2 = new Gpio(24, "in")
+const sensor2 = new Gpio(23, "in")
 
 const PORT = 8080
 
