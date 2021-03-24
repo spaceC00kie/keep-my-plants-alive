@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+import GaugeChart from "react-gauge-chart"
 
 const Pothos = () => {
   const [sensor1, setSensor1] = useState("")
@@ -10,7 +11,7 @@ const Pothos = () => {
       .then(i => {
         setSensor1(i.is1Wet ? "wet" : "dry")
         setSensor2(i.is2Wet ? "wet" : "dry")
-    })
+      })
   }
 
   useEffect(getSoilSensor, [])
@@ -20,6 +21,7 @@ const Pothos = () => {
       {sensor1} <br />
       {sensor2} <br />
       <button onClick={() => getSoilSensor()}>Update</button>
+      <GaugeChart id="gauge-chart1" />
     </div>
   )
 }
