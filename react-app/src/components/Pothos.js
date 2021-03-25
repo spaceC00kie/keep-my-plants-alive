@@ -28,12 +28,14 @@ const Pothos = () => {
       <button onClick={() => getSoilSensor()}>Update</button>
       <GaugeChart
         id="gauge-chart3"
-        nrOfLevels={9}
+        nrOfLevels={7}
         colors={["#fcf644", "#44edfc"]}
-        arcWidth={0.8}
+        arcWidth={0.5}
         percent={0.8}
         style={chartStyle}
         textColor="#000000"
+        cornerRadius={15}
+        arcPadding={0.02}
       />
     </div>
   )
