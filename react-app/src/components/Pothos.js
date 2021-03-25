@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import GaugeChart from "react-gauge-chart"
+import "../App.css"
 
 const Pothos = () => {
   const [sensor1, setSensor1] = useState("")
@@ -16,17 +17,23 @@ const Pothos = () => {
 
   useEffect(getSoilSensor, [])
 
+  const chartStyle = {
+    height: "50%",
+  }
+
   return (
-    <div>
+    <div className="gauge">
       {sensor1} <br />
       {sensor2} <br />
       <button onClick={() => getSoilSensor()}>Update</button>
       <GaugeChart
         id="gauge-chart3"
-        nrOfLevels={30}
-        colors={["#FF5F6D", "#FFC371"]}
-        arcWidth={0.3}
-        percent={0.37}
+        nrOfLevels={9}
+        colors={["#fcf644", "#44edfc"]}
+        arcWidth={0.8}
+        percent={0.8}
+        style={chartStyle}
+        textColor="#000000"
       />
     </div>
   )
