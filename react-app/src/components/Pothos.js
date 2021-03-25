@@ -18,7 +18,7 @@ const Pothos = () => {
   useEffect(getSoilSensor, [])
 
   const chartStyle = {
-    height: "50%",
+    height: "100%",
   }
 
   return (
@@ -30,12 +30,14 @@ const Pothos = () => {
         id="gauge-chart3"
         nrOfLevels={7}
         colors={["#fcf644", "#44edfc"]}
-        arcWidth={0.5}
+        arcWidth={0.4}
         percent={0.8}
         style={chartStyle}
-        textColor="#000000"
-        cornerRadius={15}
-        arcPadding={0.02}
+        textColor="#b445f5"
+        needleColor="#d08df7"
+        needleBaseColor="#5f2382"
+        cornerRadius={30}
+        arcPadding={0.03}
       />
     </div>
   )
