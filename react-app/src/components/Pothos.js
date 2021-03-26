@@ -25,7 +25,7 @@ const Pothos = () => {
     <div className="gauge">
       {sensor1} <br />
       {sensor2} <br />
-      <button onClick={() => getSoilSensor()} style={{ backgroundColor: "#76ed72" }}>Update</button>
+      <button onClick={() => getSoilSensor()} style={{ backgroundColor: "#76ed72" }}>Check again</button>
       <GaugeChart
         id="gauge-chart3"
         nrOfLevels={7}
