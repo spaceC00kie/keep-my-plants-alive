@@ -24,8 +24,6 @@ const Pothos = () => {
 
   return (
     <div className="gauge">
-      {sensor1} <br />
-      {sensor2} <br />
       <Button
         onClick={() => getSoilSensor()}
         style={{ backgroundColor: "#76ed72" }}
