@@ -8,3 +8,11 @@ h1 {
   color: rgb(7, 179, 247);
   text-align: center;
 }
+
+.sensor-h1 {
+
+}
+
+#connection-status {
+  color: red;
+}

@@ -6,6 +6,7 @@ import { Button } from "@material-ui/core"
 const Pothos = () => {
   const [sensor1, setSensor1] = useState(0.5)
   const [sensor2, setSensor2] = useState(0.5)
+  const [isConnected, setIsConnected] = useState(true)
 
   const getSoilSensor = () => {
     fetch("http://10.0.0.6:8080/sensor")
@@ -15,7 +16,8 @@ const Pothos = () => {
         setSensor2(i.is2Wet ? 1.0 : 0.0)
       })
       .catch(e => {
-        alert(e)
+        setIsConnected(false)
+        console.log("set to false from catch method")
       })
   }
 
@@ -33,6 +35,7 @@ const Pothos = () => {
       >
         Check again
       </Button>
+      {isConnected ? "" : <h1 id="connection-status">Failed to connect</h1>}
       <h1>Sensor 1</h1>
       <GaugeChart
         id="gauge-chart1"
@@ -41,8 +44,8 @@ const Pothos = () => {
         arcWidth={0.4}
         percent={sensor1}
         style={chartStyle}
-        textColor="#b445f5"
-        needleColor="#d08df7"
+        textColor="#07b3f7"
+        needleColor="#dec0fc"
         needleBaseColor="#5f2382"
         cornerRadius={30}
         arcPadding={0.03}
@@ -55,8 +58,8 @@ const Pothos = () => {
         arcWidth={0.4}
         percent={sensor2}
         style={chartStyle}
-        textColor="#b445f5"
-        needleColor="#d08df7"
+        textColor="#07b3f7"
+        needleColor="#dec0fc"
         needleBaseColor="#5f2382"
         cornerRadius={30}
         arcPadding={0.03}
