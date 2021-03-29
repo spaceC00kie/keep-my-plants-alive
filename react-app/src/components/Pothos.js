@@ -14,6 +14,9 @@ const Pothos = () => {
         setSensor1(i.is1Wet ? 1.0 : 0.0)
         setSensor2(i.is2Wet ? 1.0 : 0.0)
       })
+      .catch(e => {
+        alert(e)
+      })
   }
 
   useEffect(getSoilSensor, [])
@@ -30,6 +33,7 @@ const Pothos = () => {
       >
         Check again
       </Button>
+      <h1>Sensor 1</h1>
       <GaugeChart
         id="gauge-chart1"
         nrOfLevels={7}
@@ -43,6 +47,7 @@ const Pothos = () => {
         cornerRadius={30}
         arcPadding={0.03}
       />
+      <h1>Sensor 2</h1>
       <GaugeChart
         id="gauge-chart2"
         nrOfLevels={7}
