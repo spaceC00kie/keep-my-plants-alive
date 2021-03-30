@@ -1,9 +1,9 @@
 html {
-  background-color:  rgb(240, 228, 245);
+  background-color: rgb(221, 237, 252);
 }
 .gauge {
   /* width: 50%; */
-  background-color: rgb(240, 228, 245);
+  background-color: rgb(221, 237, 252);
   width: 100%;
 }
 
