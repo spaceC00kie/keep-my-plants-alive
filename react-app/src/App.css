@@ -8,14 +8,10 @@ html {
 }
 
 h1 {
-  color: rgb(7, 179, 247);
+  color: rgba(51, 64, 250, 0.815);
   text-align: center;
 }
 
-.sensor-h1 {
-
-}
-
 #connection-status {
-  color: red;
+  color: rgba(255, 0, 98, 0.74);
 }

@@ -45,8 +45,8 @@ const Pothos = () => {
         percent={sensor1}
         style={chartStyle}
         textColor="#07b3f7"
-        needleColor="#dec0fc"
-        needleBaseColor="#5f2382"
+        needleColor="#afd6fa"
+        needleBaseColor="#0c87fa"
         cornerRadius={30}
         arcPadding={0.03}
       />
@@ -59,8 +59,8 @@ const Pothos = () => {
         percent={sensor2}
         style={chartStyle}
         textColor="#07b3f7"
-        needleColor="#dec0fc"
-        needleBaseColor="#5f2382"
+        needleColor="#afd6fa"
+        needleBaseColor="#0c87fa"
         cornerRadius={30}
         arcPadding={0.03}
       />
