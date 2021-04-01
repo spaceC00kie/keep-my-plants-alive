@@ -35,7 +35,7 @@ const Pothos = () => {
       >
         Check again
       </Button>
-      {isConnected ? "" : <h2 id="connection-status">Failed to connect</h2>}
+      {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
       <h1>Sensor 1</h1>
       <GaugeChart
         id="gauge-chart1"
