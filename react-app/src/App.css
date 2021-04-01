@@ -1,3 +1,5 @@
+* {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
 html {
   background-color: rgb(221, 237, 252);
 }
@@ -9,6 +11,11 @@ html {
 
 h1 {
   color: rgba(51, 64, 250, 0.815);
+  text-align: center;
+  background-color: rgb(190, 230, 243);
+}
+
+h2 {
   text-align: center;
 }
 
