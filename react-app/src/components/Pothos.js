@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import GaugeChart from "react-gauge-chart"
 import "../App.css"
-import { Button } from "@material-ui/core"
 
 const Pothos = () => {
   const [sensor1, setSensor1] = useState(0.5)
@@ -17,7 +16,6 @@ const Pothos = () => {
       })
       .catch(e => {
         setIsConnected(false)
-        console.log("set to false from catch method")
       })
   }
 
