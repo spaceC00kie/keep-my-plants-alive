@@ -28,7 +28,7 @@ const Pothos = () => {
   return (
     <div className="gauge">
       
-      <button class="button" onClick={() => getSoilSensor()}>Seriously, check again</button>
+      <button class="button" onClick={() => getSoilSensor()}>Check again</button>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
       <h1>Sensor 1</h1>
       <GaugeChart
