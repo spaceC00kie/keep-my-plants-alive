@@ -8,13 +8,14 @@ html {
 .gauge {
   /* width: 50%; */
   background-color: rgb(221, 237, 252);
-  width: 100%;
+  width: 80%;
 }
 
 .button {
   background-color: #76ed72;
   font-size: larger;
   padding: 16px;
+  margin: 20px 20px 0px 20px;
   border: 3px solid blue;
   border-radius: 12px;
   transition-duration: 0.4s;
@@ -37,4 +38,7 @@ h2 {
 
 #connection-status {
   color: rgba(255, 0, 98, 0.74);
+  font-size: xx-large;
+  text-align: left;
+  margin: 10px 10px 0px 10px;
 }
