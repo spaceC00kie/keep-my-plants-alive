@@ -31,10 +31,11 @@ const Pothos = () => {
     <div className="gauge">
       <Button
         onClick={() => getSoilSensor()}
-        style={{backgroundColor: "#76ed72"}}
+        style={{ backgroundColor: "#76ed72" }}
       >
         Check again
       </Button>
+      <button class="button" onClick={() => getSoilSensor()}>Seriously, check again</button>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
       <h1>Sensor 1</h1>
       <GaugeChart

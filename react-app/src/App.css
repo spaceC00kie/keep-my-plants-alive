@@ -1,4 +1,6 @@
-* {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
 html {
   background-color: rgb(221, 237, 252);
@@ -7,6 +9,19 @@ html {
   /* width: 50%; */
   background-color: rgb(221, 237, 252);
   width: 100%;
+}
+
+.button {
+  background-color: #76ed72;
+  font-size: larger;
+  padding: 16px;
+  border: 3px solid blue;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: chartreuse;
 }
 
 h1 {
