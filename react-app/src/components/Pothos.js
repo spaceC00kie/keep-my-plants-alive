@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import GaugeChart from "react-gauge-chart"
 import "../App.css"
+import { Button } from "@material-ui/core"
 
 const Pothos = () => {
   const [sensor1, setSensor1] = useState(0.5)
@@ -27,8 +28,15 @@ const Pothos = () => {
 
   return (
     <div className="gauge">
-      
-      <button class="button" onClick={() => getSoilSensor()}>Check again</button>
+      <Button
+        onClick={() => getSoilSensor()}
+        style={{ backgroundColor: "#76ed72" }}
+      >
+        Check again
+      </Button>
+      <button class="button" onClick={() => getSoilSensor()}>
+        Check again
+      </button>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
       <h1>Sensor 1</h1>
       <GaugeChart
