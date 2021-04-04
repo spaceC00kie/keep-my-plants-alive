@@ -11,6 +11,10 @@ html {
   width: 80%;
 }
 
+.button1 {
+  size: "large";
+}
+
 .button {
   background-color: #76ed72;
   font-size: larger;

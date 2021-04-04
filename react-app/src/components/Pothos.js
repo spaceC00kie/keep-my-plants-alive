@@ -29,7 +29,9 @@ const Pothos = () => {
   return (
     <div className="gauge">
       <Button
+        class="button1"
         onClick={() => getSoilSensor()}
+        variant="outlined"
         style={{ backgroundColor: "#76ed72" }}
       >
         Check again
