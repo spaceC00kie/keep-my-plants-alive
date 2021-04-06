@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react"
 import GaugeChart from "react-gauge-chart"
 import "../App.css"
 import { Button } from "@material-ui/core"
-import { styled } from '@material-ui/core/styles';
-
+import { styled } from "@material-ui/core/styles"
 
 const Pothos = () => {
   const [sensor1, setSensor1] = useState(0.5)
@@ -11,14 +10,18 @@ const Pothos = () => {
   const [isConnected, setIsConnected] = useState(true)
 
   const MyButton = styled(Button)({
-    background: 'linear-gradient(45deg, #fcf644 30%, #44edfc 90%)',
+    background: "linear-gradient(45deg, #fcf644 30%, #44edfc 90%)",
     border: 0,
     borderRadius: 17,
-    boxShadow: '0 3px 5px 2px rgba(63, 191, 191, 0.25)',
-    color: 'black',
+    boxShadow: "0 3px 5px 2px rgba(63, 191, 191, 0.25)",
+    color: "black",
+    fontSize: "larger",
     height: 48,
-    padding: '10px 30px',
-  });
+    padding: "10px 30px",
+    '&:hover': {
+      background: "#29fa22",
+    },
+  })
 
   const getSoilSensor = () => {
     fetch("http://10.0.0.6:8080/sensor")
@@ -40,11 +43,7 @@ const Pothos = () => {
 
   return (
     <div className="gauge">
-      <Button
-        class="button"
-        onClick={() => getSoilSensor()}
-        variant="outlined"
-      >
+      <Button class="button" onClick={() => getSoilSensor()} variant="outlined">
         Check again?
       </Button>
       <MyButton onClick={() => getSoilSensor()}>Try this</MyButton>
