@@ -20,6 +20,7 @@ const Pothos = () => {
     padding: "10px 30px",
     '&:hover': {
       background: "#29fa22",
+      transform: "scale(1.05)",
     },
   })
 
