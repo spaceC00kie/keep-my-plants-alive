@@ -14,7 +14,7 @@ const Pothos = () => {
     background: 'linear-gradient(45deg, #fcf644 30%, #44edfc 90%)',
     border: 0,
     borderRadius: 17,
-    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    boxShadow: '0 3px 5px 2px rgba(63, 191, 191, 0.25)',
     color: 'black',
     height: 48,
     padding: '10px 30px',
