@@ -11,13 +11,13 @@ const Pothos = () => {
   const [isConnected, setIsConnected] = useState(true)
 
   const MyButton = styled(Button)({
-    background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    background: 'linear-gradient(45deg, #fcf644 30%, #44edfc 90%)',
     border: 0,
-    borderRadius: 3,
+    borderRadius: 17,
     boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-    color: 'white',
+    color: 'black',
     height: 48,
-    padding: '0 30px',
+    padding: '10px 30px',
   });
 
   const getSoilSensor = () => {
@@ -47,7 +47,7 @@ const Pothos = () => {
       >
         Check again?
       </Button>
-      <MyButton>Try this</MyButton>
+      <MyButton onClick={() => getSoilSensor()}>Try this</MyButton>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
       <h1>Sensor 1</h1>
       <GaugeChart
