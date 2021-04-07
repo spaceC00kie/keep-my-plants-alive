@@ -18,9 +18,9 @@ const Pothos = () => {
     fontSize: "larger",
     height: 48,
     padding: "10px 30px",
-    transitionDuration: 1000,
+    transition: '1.3s cubic-bezier(.47,1.64,.41,.8)',
     '&:hover': {
-      background: "#29fa22",
+      background: "#44fcaf",
       transform: "scale(1.05)",
     },
   })
