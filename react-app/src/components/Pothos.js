@@ -9,22 +9,7 @@ const Pothos = () => {
   const [sensor2, setSensor2] = useState(0.5)
   const [isConnected, setIsConnected] = useState(true)
 
-  const MyButton = styled(Button)({
-    background: "linear-gradient(45deg, #fcf644 30%, #44edfc 90%)",
-    border: 0,
-    borderRadius: 17,
-    boxShadow: "0 3px 5px 2px rgba(63, 191, 191, 0.25)",
-    color: "black",
-    fontSize: "larger",
-    height: 48,
-    padding: "10px 30px",
-    transition: "1.3s cubic-bezier(.47,1.64,.41,.8)",
-    "&:hover": {
-      background: "#44fcaf",
-      boxShadow: "0 10px 15px 8px rgba(63, 191, 191, 0.35)",
-      transform: "scale(1.1)",
-    },
-  })
+  const MyButton = styled(Button)({})
 
   const getSoilSensor = () => {
     fetch("http://10.0.0.6:8080/sensor")
@@ -46,10 +31,7 @@ const Pothos = () => {
 
   return (
     <div className="gauge">
-      <Button class="button" onClick={() => getSoilSensor()} variant="outlined">
-        Check again?
-      </Button>
-      <MyButton onClick={() => getSoilSensor()}>Try this</MyButton>
+      <MyButton id="myButton" onClick={() => getSoilSensor()}>Check again</MyButton>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
       <h1>Sensor 1</h1>
       <GaugeChart
