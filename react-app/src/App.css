@@ -1,5 +1,6 @@
 * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 
 html {
@@ -23,6 +24,7 @@ h2 {
 }
 
 #myButton {
+  align-items: center;
   background: linear-gradient(45deg, #fcf644 30%, #44edfc 90%);
   border: 0;
   border-radius: 17px;
