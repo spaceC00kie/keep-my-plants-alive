@@ -24,7 +24,6 @@ h2 {
 }
 
 #myButton {
-  align-items: center;
   background: linear-gradient(45deg, #fcf644 30%, #44edfc 90%);
   border: 0;
   border-radius: 17px;
@@ -46,6 +45,6 @@ h2 {
 #connection-status {
   color: rgba(255, 0, 98, 0.74);
   font-size: xx-large;
-  text-align: left;
+  text-align: center;
   margin: 10px 10px 0px 10px;
 }
