@@ -15,6 +15,7 @@ html {
 h1 {
   color: rgba(79, 19, 158, 0.822);
   text-align: center;
+  text-shadow: 1px 2px rgba(182, 16, 248, 0.466);
   background-color: rgb(190, 230, 243);
   padding: 15px;
 }
