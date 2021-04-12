@@ -15,7 +15,6 @@ html {
 h1 {
   color: rgba(79, 19, 158, 0.822);
   text-align: center;
-  text-shadow: 1px 2px rgba(182, 16, 248, 0.466);
   background-color: rgb(190, 230, 243);
   padding: 15px;
 }
@@ -31,7 +30,7 @@ h2 {
   border-radius: 17px;
   box-shadow: 0 3px 5px 2px rgba(63, 191, 191, 0.25);
   color: rgba(80, 19, 158, 0.993);
-  font-size: larger;
+  font-size: x-large;
   height: 48px;
   padding: 10px 30px;
   margin: 20px 20px 0px 20px;
