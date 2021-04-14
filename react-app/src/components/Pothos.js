@@ -62,6 +62,8 @@ const Pothos = () => {
         cornerRadius={30}
         arcPadding={0.03}
       />
+      <h4>About</h4>
+      <p>The gauges above show the moisture levels detected in soil. Each gauge shows output from one sensor.</p>
     </div>
   )
 }
