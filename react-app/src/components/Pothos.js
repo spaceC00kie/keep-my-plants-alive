@@ -64,6 +64,7 @@ const Pothos = () => {
       />
       <h4>About</h4>
       <p>The gauges above show the moisture levels detected in soil. Each gauge shows output from one sensor.</p>
+      <h5>This will be the footer</h5>
     </div>
   )
 }
