@@ -28,6 +28,17 @@ h3 {
   font-size: xx-large;
 }
 
+h4 {
+  font-size: large;
+  text-align: left;
+  margin-left: 10px;
+}
+
+p {
+  text-align: left;
+  margin-left: 10px;
+}
+
 #myButton {
   background: linear-gradient(45deg, #fcf644 30%, #44edfc 90%);
   border: 0;
