@@ -1,6 +1,7 @@
 * {
   font-family: "Avantgarde", "TeX Gyre Adventor", "URW Gothic L", sans-serif;
   text-align: center;
+  color: rgba(79, 19, 158, 0.822);
 }
 
 html {
@@ -13,8 +14,6 @@ html {
 }
 
 h1 {
-  color: rgba(79, 19, 158, 0.822);
-  text-align: center;
   background-color: rgb(190, 230, 243);
   padding: 15px;
 }
