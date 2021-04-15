@@ -30,7 +30,6 @@ h3 {
 
 #site {
   background-color: rgb(221, 237, 252);
-  width: 100%;
 }
 
 #myButton {
@@ -60,11 +59,13 @@ h3 {
 }
 
 #sensor1 {
-  float: left;
-  max-width: 49%;
 }
 
 #sensor2 {
-  float: right;
-  max-width: 49%;
+}
+
+#sensors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }

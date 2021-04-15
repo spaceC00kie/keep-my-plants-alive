@@ -36,6 +36,7 @@ const Pothos = () => {
         Check again
       </MyButton>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
+      <div id="sensors">
       <div id="sensor1">
         <h1>Sensor 1</h1>
         <GaugeChart
@@ -67,6 +68,7 @@ const Pothos = () => {
           cornerRadius={30}
           arcPadding={0.03}
         />
+      </div>
       </div>
       <a href="https://www.kirstiewilkinson.com/">About</a>
     </div>
