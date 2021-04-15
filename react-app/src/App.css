@@ -58,3 +58,13 @@ h3 {
   font-size: xx-large;
   margin: 10px 10px 0px 10px;
 }
+
+#sensor1 {
+  float: left;
+  max-width: 49%;
+}
+
+#sensor2 {
+  float: right;
+  max-width: 49%;
+}

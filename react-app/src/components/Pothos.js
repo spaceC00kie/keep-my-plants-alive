@@ -32,36 +32,42 @@ const Pothos = () => {
   return (
     <div className="gauge">
       <h3>Keep My Plants Alive!</h3>
-      <MyButton id="myButton" onClick={() => getSoilSensor()}>Check again</MyButton>
+      <MyButton id="myButton" onClick={() => getSoilSensor()}>
+        Check again
+      </MyButton>
       {isConnected ? "" : <h2 id="connection-status">Failed to Connect!</h2>}
-      <h1>Sensor 1</h1>
-      <GaugeChart
-        id="gauge-chart1"
-        nrOfLevels={7}
-        colors={["#fcf644", "#44edfc"]}
-        arcWidth={0.4}
-        percent={sensor1}
-        style={chartStyle}
-        textColor="#07b3f7"
-        needleColor="#afd6fa"
-        needleBaseColor="#0c87fa"
-        cornerRadius={30}
-        arcPadding={0.03}
-      />
-      <h1>Sensor 2</h1>
-      <GaugeChart
-        id="gauge-chart2"
-        nrOfLevels={7}
-        colors={["#fcf644", "#44edfc"]}
-        arcWidth={0.4}
-        percent={sensor2}
-        style={chartStyle}
-        textColor="#07b3f7"
-        needleColor="#afd6fa"
-        needleBaseColor="#0c87fa"
-        cornerRadius={30}
-        arcPadding={0.03}
-      />
+      <div id="sensor1">
+        <h1>Sensor 1</h1>
+        <GaugeChart
+          id="gauge-chart1"
+          nrOfLevels={7}
+          colors={["#fcf644", "#44edfc"]}
+          arcWidth={0.4}
+          percent={sensor1}
+          style={chartStyle}
+          textColor="#07b3f7"
+          needleColor="#afd6fa"
+          needleBaseColor="#0c87fa"
+          cornerRadius={30}
+          arcPadding={0.03}
+        />
+      </div>
+      <div id="sensor2">
+        <h1>Sensor 2</h1>
+        <GaugeChart
+          id="gauge-chart2"
+          nrOfLevels={7}
+          colors={["#fcf644", "#44edfc"]}
+          arcWidth={0.4}
+          percent={sensor2}
+          style={chartStyle}
+          textColor="#07b3f7"
+          needleColor="#afd6fa"
+          needleBaseColor="#0c87fa"
+          cornerRadius={30}
+          arcPadding={0.03}
+        />
+      </div>
       <a href="https://www.kirstiewilkinson.com/">About</a>
     </div>
   )
