@@ -7,11 +7,6 @@
 html {
   background-color: rgb(221, 237, 252);
 }
-.gauge {
-  /* width: 50%; */
-  background-color: rgb(221, 237, 252);
-  width: 100%;
-}
 
 a {
   font-size: large;
@@ -31,6 +26,11 @@ h3 {
   background-color: rgb(169, 213, 238);
   padding: 25px;
   font-size: xx-large;
+}
+
+#site {
+  background-color: rgb(221, 237, 252);
+  width: 100%;
 }
 
 #myButton {

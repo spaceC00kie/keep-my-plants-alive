@@ -30,7 +30,7 @@ const Pothos = () => {
   }
 
   return (
-    <div className="gauge">
+    <div id="site">
       <h3>Keep My Plants Alive!</h3>
       <MyButton id="myButton" onClick={() => getSoilSensor()}>
         Check again
