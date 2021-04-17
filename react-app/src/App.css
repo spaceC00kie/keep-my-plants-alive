@@ -14,7 +14,7 @@ a {
 }
 
 h1 {
-  background-color: rgb(190, 230, 243);
+  background-color: rgb(187, 241, 230);
   padding: 15px;
 }
 
@@ -23,9 +23,10 @@ h2 {
 }
 
 h3 {
-  background-color: rgb(169, 213, 238);
+  background-color: rgb(184, 226, 250);
   padding: 25px;
   font-size: xx-large;
+  text-decoration: underline;
 }
 
 #site {
