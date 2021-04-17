@@ -16,6 +16,7 @@ a {
 h1 {
   background-color: rgb(187, 241, 230);
   padding: 15px;
+  font-size: x-large;
 }
 
 h2 {
@@ -54,7 +55,7 @@ h3 {
 }
 
 #connection-status {
-  color: rgba(255, 0, 98, 0.74);
+  color: rgba(255, 0, 64, 0.788);
   font-size: xx-large;
   margin: 10px 10px 0px 10px;
 }
