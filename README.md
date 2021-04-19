@@ -2,9 +2,9 @@
 
 ## About
 
-This is my test of a full-stack system for my soil sensor project. On a raspberry pi I have an express api to take in data from moisture sensors, and a react app shows the output from the api.
+This is my test of a full-stack system for my soil sensor project. An express api takes in data from moisture sensors and a react app shows the output from the api. Both run on a raspberry pi.
 
-When the react app doesn't read any data it will show the message "Failed to Connect!" and the gauges will read at 50%. Otherwise, there will be no error message and the gauges will show the moisture level each sensor detects.
+When the react app doesn't receive data it will show the message "Failed to Connect!" in a banner above the gauges and the gauges will read 50%. Otherwise, there will be no error message and the gauges will show the moisture level from each sensor.
 
 *Demo will go here*
 
