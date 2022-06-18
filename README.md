@@ -10,6 +10,8 @@ This is a full-stack system to monitor soil moisture levels in houseplants. An e
 
 You can put the sensors in water or soil for data. When the react app doesn't receive any data it will show the message "Failed to Connect!" in a banner above the gauges and the gauges will read 50%. Otherwise, there will be no error message and the gauges will show the moisture level from each sensor.
 
+<img src="readme-assets/Gauges.png" width="50%">
+
 <sub><sup> Thank you for checking out my project :) </sup></sub>
 
 <details>
