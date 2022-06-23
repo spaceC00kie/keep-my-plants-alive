@@ -8,9 +8,9 @@ This full-stack system monitors soil moisture levels in houseplants. Data from m
 
 <img src="readme-assets/Flow.png" width="50%">
 
-<img src="readme-assets/PiSensor.jpg" width="50%">
-
 The sensors can be put in water or soil and the moisture percentage readings will be displayed on gauges on the webpage.
+
+<img src="readme-assets/PiSensor.jpg" width="50%">
 
 <img src="readme-assets/Gauges.png" width="50%">
 
