@@ -20,11 +20,25 @@ With Keep My Plants Alive, you'll never have to worry about over- or under-water
 
 ## Usage
 
-To use Keep My Plants Alive, simply clone or download this repository
+To use Keep My Plants Alive, follow these steps:
+
+1. Clone or download this repository.
+2. Install the dependencies listed in the package.json file.
+3. Connect the moisture sensors to the raspberry pi.
+4. Run the Express API and the React app.
+
+## Troubleshooting
+
+If you encounter any issues while using Keep My Plants Alive, try the following solutions:
+
+- Make sure the moisture sensors are properly connected to the raspberry pi.
+- Check that the Express API and the React app are running.
+- If the gauges are not displaying accurate readings, try recalibrating the sensors.
+
+## License
+
+Keep My Plants Alive is licensed under the AGPL v3 license. This means that you are free to use and modify the code as long as you make any changes available to the public. For more information, see the LICENSE file.
 
 ## Credits
 
-Keep My Plants Alive was created by me, spaceC00kie. Thanks to [Martin36](https://github.com/Martin36) for the [React component](https://github.com/Martin36/react-gauge-chart) that helped make this app possible.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Keep My Plants Alive was created by me, [spaceC00kie](https://github.com/spaceC00kie). Thanks to [Martin36](https://github.com/Martin36) for the [React component](https://github.com/Martin36/react-gauge-chart) that helped make this app possible.
