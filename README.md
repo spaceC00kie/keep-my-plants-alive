@@ -6,15 +6,15 @@
 
 <img src="readme-assets/PlantsSensor.jpg" width="50%">
 
-Do you struggle to keep your houseplants healthy and hydrated? Introducing Keep My Plants Alive, a full-stack system that makes it easy to monitor soil moisture levels in your plants.
+Keep My Plants Alive is a comprehensive system designed to help you maintain the health and hydration of your houseplants. It leverages the power of moisture sensors, an Express API, and a React app, all running on a Raspberry Pi.
 
 <img src="readme-assets/PiSensor.jpg" width="50%">
 
-Our system features moisture sensors that can be placed in water or soil. The sensors send readings to an Express API, which then displays the data on easy-to-read gauges in a React app. And the best part? It all runs on a convenient raspberry pi.
+The moisture sensors can be placed in the soil or water of your plants, and they transmit data to the Express API. This data is then visualized on user-friendly gauges in the React app.
 
 <img src="readme-assets/Flow.png" width="50%">
 
-With Keep My Plants Alive, you'll never have to worry about over- or under-watering your plants again!
+With Keep My Plants Alive, you can ensure your plants are neither over-watered nor under-watered!
 
 <img src="readme-assets/Gauges.png" width="50%">
 
@@ -22,23 +22,19 @@ With Keep My Plants Alive, you'll never have to worry about over- or under-water
 
 To use Keep My Plants Alive, follow these steps:
 
-1. Clone or download this repository.
-2. Install the dependencies listed in the package.json file.
-3. Connect the moisture sensors to the raspberry pi.
-4. Run the Express API and the React app.
+1. Clone or Download the Repository: Use the "git clone" command or download the zip file of this repository to your local system.
+2. Install Dependencies: Navigate to the project directory and run "npm install" to install all the necessary dependencies mentioned in the package.json file.
+3. Set Up the Hardware: Connect the moisture sensors to your Raspberry Pi. Make sure the connections are secure and correct.
+4. Run the Application: Start the Express API and the React app. You can do this by running "npm start" in the respective directories of the Express API and the React app.
 
 ## Troubleshooting
 
-If you encounter any issues while using Keep My Plants Alive, try the following solutions:
+If you run into any issues while using Keep My Plants Alive, consider the following solutions:
 
-- Make sure the moisture sensors are properly connected to the raspberry pi.
-- Check that the Express API and the React app are running.
-- If the gauges are not displaying accurate readings, try recalibrating the sensors.
-
-## License
-
-Keep My Plants Alive is licensed under the AGPL v3 license. This means that you are free to use and modify the code as long as you make any changes available to the public. For more information, see the LICENSE file.
+- Check the Sensor Connections: Ensure that the moisture sensors are correctly and securely connected to the Raspberry Pi.
+- Verify the API and App Status: Ensure that both the Express API and the React app are running without errors.
+- Recalibrate the Sensors: If the gauges are not showing accurate readings, you may need to recalibrate the sensors.
 
 ## Credits
 
-Keep My Plants Alive was created by me, [spaceC00kie](https://github.com/spaceC00kie). Thanks to [Martin36](https://github.com/Martin36) for the [React component](https://github.com/Martin36/react-gauge-chart) that helped make this app possible.
+Keep My Plants Alive was developed by [spaceC00kie](https://github.com/spaceC00kie). Thanks to [Martin36](https://github.com/Martin36) for the [React component](https://github.com/Martin36/react-gauge-chart) that helped make this app possible.
