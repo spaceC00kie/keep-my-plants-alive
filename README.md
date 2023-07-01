@@ -25,15 +25,18 @@ To use Keep My Plants Alive, follow these steps:
 1. Clone or Download the Repository: Use the "git clone" command or download the zip file of this repository to your local system.
 2. Install Dependencies: Navigate to the project directory and run "npm install" to install all the necessary dependencies mentioned in the package.json file.
 3. Set Up the Hardware: Connect the moisture sensors to your Raspberry Pi. Make sure the connections are secure and correct.
-4. Run the Application: Start the Express API and the React app. You can do this by running "npm start" in the respective directories of the Express API and the React app.
+4. Run the Express API: Start the Express API by navigating to its directory and running npm start. If the server started successfully, you should see a confirmation message in the console.
+5. Run the React App: Start the React app by navigating to its directory and running npm start. The app should open in your default web browser.
+6. Use the App: Click the "Check again" button in the app to fetch the latest sensor data. The gauges should update to reflect the current moisture levels.
 
 ## Troubleshooting
 
 If you run into any issues while using Keep My Plants Alive, consider the following solutions:
 
-- Check the Sensor Connections: Ensure that the moisture sensors are correctly and securely connected to the Raspberry Pi.
-- Verify the API and App Status: Ensure that both the Express API and the React app are running without errors.
-- Recalibrate the Sensors: If the gauges are not showing accurate readings, you may need to recalibrate the sensors.
+- Check the Sensor Connections: Ensure that the moisture sensors are correctly and securely connected to the Raspberry Pi GPIO pins 2 and 23. If the sensors are not connected properly, the API will not be able to read accurate data.
+- Verify the API Status: Make sure the Express API is running without errors. You can check this by looking at the console output. If the server started successfully, you should see a confirmation message. If you don't see this message or if you see any error messages, there may be an issue with the server.
+- Recalibrate the Sensors: If the gauges in the React app are not showing accurate readings, the sensors may need to be recalibrated. Check the documentation for your specific sensors to see how to do this.
+- Check the Sensor State: If the gauges in the React app are always showing that the soil is dry, even when it's wet, it could be because the readSync() method is returning 1 when the sensor is wet and 0 when it's dry, which is the opposite of what the API expects. Try removing the ! operator in the /sensor endpoint to invert the values.
 
 ## Credits
 
