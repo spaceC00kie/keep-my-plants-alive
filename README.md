@@ -22,11 +22,31 @@ With Keep My Plants Alive, you can ensure your plants are neither over-watered n
 
 To use Keep My Plants Alive, follow these steps:
 
-1. Clone or Download the Repository: Use the "git clone" command or download the zip file of this repository to your local system.
-2. Install Dependencies: Navigate to the project directory and run "npm install" to install all the necessary dependencies mentioned in the package.json file.
+1. Clone or Download the Repository:
+```
+git clone https://github.com/your-username/keep-my-plants-alive
+````
+or download the zip file of this repository to your local system.
+
+2. Install Dependencies: Navigate to the project directory and install dependencies from the package.json file with
+```
+cd keep-my-plants-alive && npm i
+````
+
 3. Set Up the Hardware: Connect the moisture sensors to your Raspberry Pi. Make sure the connections are secure and correct.
-4. Run the Express API: Start the Express API by navigating to its directory and running npm start. If the server started successfully, you should see a confirmation message in the console.
-5. Run the React App: Start the React app by navigating to its directory and running npm start. The app should open in your default web browser.
+
+4. Run the Express API: Navigate to its directory and start the API with
+```
+cd express-api && npm start
+````
+If the server started successfully, you should see a confirmation message in the console.
+
+5. Run the React App: Navigate to its directory and start the React app with
+```
+cd react-app && npm start
+````
+The app should open in your default web browser.
+
 6. Use the App: Click the "Check again" button in the app to fetch the latest sensor data. The gauges should update to reflect the current moisture levels.
 
 ## Troubleshooting
