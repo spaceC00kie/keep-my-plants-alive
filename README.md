@@ -10,7 +10,7 @@ Keep My Plants Alive is a comprehensive system designed to help you maintain the
 
 <img src="readme-assets/PiSensor.jpg" width="50%">
 
-The moisture sensors can be placed in the soil or water of your plants, and they transmit data to the Express API. This data is then visualized on user-friendly gauges in the React app.
+The moisture sensors can be placed in freshly-watered or dry soil, and they transmit data to the Express API. This data is then visualized on user-friendly gauges in the React app.
 
 <img src="readme-assets/Flow.png" width="50%">
 
